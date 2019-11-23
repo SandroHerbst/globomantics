@@ -1,8 +1,7 @@
 import React from 'react'
 import logo from './GloboLogo.png'
 
-const Header = () => {
-    return (
+const Header = () => (
     <header className="row">
         <div className="col-md-5">
             <img src={logo} className="logo" alt="logo" />
@@ -11,7 +10,6 @@ const Header = () => {
                 Providing houses world wide
         </div>
     </header>
-    )
-}
+)
  
 export default Header;
