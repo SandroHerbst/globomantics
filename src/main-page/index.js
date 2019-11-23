@@ -1,13 +1,9 @@
 import React, {Component} from 'react'
 import './main-page.css'
 import Header from './header'
+import FeaturedHouse from './featured-house'
 
 class App extends Component {
-
-//  constructor(props) {
-//    super(props)
-//    this.state = {};
-//  }
 
   state = {}
 
@@ -36,6 +32,7 @@ class App extends Component {
     return (
       <div className='container'>
         <Header subtitle='Providing houses all over world'/>
+        <FeaturedHouse house={this.state.featuredHouse}/>
       </div>
     );
   }
